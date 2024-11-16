@@ -60,6 +60,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 
+  Bij de test van de verschillende toegankelijkheden viel me op dat het heel moeilijk is oplossingen ervoor te verzinnen. Bijvoorbeeld bij de spasm machine is het echt heel lastig je hand te gebruiken, maar zou ik ook niet weten wat een website ertegen kan doen. Verder gebruikte ik ook dingen zoals de brillen die je beperkingen geven bij je ogen, en bij deze is het gewoon belangrijk dat je website een goed lettertype gebruikt met constrant met de achtergrond zodat het goed te lezen blijft.
+
+Later bij de screenreader test kwam ik erachter dat mijn website niet goed gebouwd is voor screenreaders. Hij Skipte veel text omdat ze bijvoorbeeld in een svg stonden. Als je de website ook opent krijg je eerst een pop up te zien, maar deze is niet zichtbaar voor de screenreader. Dus als je niet kan zien heb je geen idee hoe je hem kan verwijderen. 
+
 </details>
 
 
