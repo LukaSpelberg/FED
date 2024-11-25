@@ -42,6 +42,8 @@
 	--color-text:#1d384a;
 	--color-text-alt: #FAFFFF;
 	--color-background:#eee;
+	--color-background-section:#dce9f5; 
+	--color-background-section-2: #C0D5E8;
 	--font-NotoSans: 'NotoSans', Sans-serif;
 	--font-Syncopate: 'Syncopate', Sans-serif;
 	--font-Urbanist: 'Urbanist', Sans-serif;
@@ -166,6 +168,14 @@ header section p {
 	display: flex;
 }
 
+main h2 {
+	font-family: var(--font-MinionPro);
+	font-weight: 400;
+	font-size: 3.5em;
+	color: var(--color-text);
+}
+
+
 main a:nth-child(1) {
 	width: 100vw;
 	height: 8em;	
@@ -202,16 +212,19 @@ main section:nth-of-type(1) {
 	align-items: center;
 }
 
-main section h2 {
-	font-family: var(--font-MinionPro);
-	font-weight: 400;
-	font-size: 4em;
-	color: var(--color-text);
-	margin-bottom: .8em;
+main section:nth-of-type(1) h2 {
+	margin-bottom: .7em;
 	margin-top: .5em;
 }
 
-main section:nth-of-type(1) a { 
+main p {
+	font-family: var(--font-Urbanist);
+	font-weight: 500;
+	color: var(--color-text);
+	font-size: .6em;
+}
+
+main section a { 
 	text-decoration: none;
 	color: var(--color-text-alt);
 	border-radius: 55px;
@@ -223,6 +236,7 @@ main section:nth-of-type(1) a {
 	letter-spacing: 3px;
 	display: flex;
 	gap: 1em;
+	margin-bottom: .5em;
 }
 
 main section:nth-of-type(1) a svg {
@@ -230,13 +244,71 @@ main section:nth-of-type(1) a svg {
 }
 
 main section:nth-of-type(1) p {
+	margin-bottom: 5em;
+}
+
+main section:nth-of-type(2) {
+	background-color: var(--color-background-section);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+main section:nth-of-type(2) p {
 	font-family: var(--font-Urbanist);
 	font-weight: 500;
 	color: var(--color-text);
 	font-size: .6em;
-	margin-top: .5em;
+	margin-bottom: 2em;
 }
 
+main section:nth-of-type(2) h2 {
+	margin-top: .2em;
+}
+
+main section:nth-of-type(2) a {
+	margin-top: 1em;
+	margin-bottom: 5em;
+	font-size: .8em;
+	padding: .7em 1em .7em 2em;
+}
+
+main section:nth-of-type(3) {
+	background-color: var(--color-background-section-2);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main section:nth-of-type(3) article {
+	background-color: var(--color-background-section-2);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-left: 2em;
+	padding-right: 2em;
+	margin-bottom: 2em;
+}
+
+main section:nth-of-type(3) article img {
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+main section:nth-of-type(3) article p {
+	margin-top: 2em;
+	line-height: 2
+}
+main section:nth-of-type(3) article a {
+	letter-spacing: unset;
+	font-size: .8em;
+}
+
+main section:nth-child(5) {
+	background-color: var(--color-background-section-2);
+}
 
 
 @media (min-width:38em) {
