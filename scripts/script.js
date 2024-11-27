@@ -6,6 +6,7 @@ deButton.addEventListener("click", toggleMenu)
 
 trailerIframe.addEventListener("mouseenter", autoPlay)
 trailerIframe.addEventListener("mouseleave", autoPlayUit)
+trailerIframe.addEventListener("click", autoPlay)
 
 
 function autoPlay() {
