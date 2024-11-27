@@ -178,13 +178,22 @@ main h2 {
 
 main a:nth-child(1) {
 	width: 100vw;
-	height: 8em;	
-	display: flex;
+	height: 8em;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, minmax(0,1fr));
 	justify-content: center;
 	align-items: center;
 	background-color: #dce9f5;
 	text-align: center;
 	overflow: hidden;
+}
+
+main a:nth-child(1) p {
+	grid-row: 2;
+	grid-column: 2;
+	font-family: var(--font-Syncopate);
+	font-weight: 800;
 }
 
 main iframe:first-of-type {
@@ -193,6 +202,8 @@ main iframe:first-of-type {
 	pointer-events: none;
 	filter: grayscale(100%);
 	z-index: -1;
+	grid-column-start: 1;
+	grid-column-end: -1;
 	
 }
 
