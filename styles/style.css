@@ -42,7 +42,9 @@
 	/* startje */
 	--color-text:#1d384a;
 	--color-text-alt: #FAFFFF;
+	--color-heading-aigis:rgb(229, 0, 0);
 	--color-background:#eee;
+	--color-background-aigis: #FFE5E5;
 	--color-background-section:#dce9f5; 
 	--color-background-section-2: #C0D5E8;
 	--font-NotoSans: 'NotoSans', Sans-serif;
@@ -621,8 +623,11 @@ footer .specs li {
 
 header p {
 	position: absolute;
-	bottom: 2em;
-	right: 1em;
+	bottom: 4em;
+	right: .9em;
+	font-family: var(--font-Syncopate);
+	color: var(--color-text-alt);
+	font-size: .6em;
 }
 
 
@@ -643,10 +648,95 @@ header figure:before {
 	bottom: 1em;
 	right: 1em;
 	background:#FAFFFF;
-	animation: pathmove 1.6s ease-in-out  infinite;
+	animation: pathmove 1.4s ease-in-out  infinite;
 	z-index: 2;
 	width: 1px;
 }
+
+.intro {
+	background-color: var(--color-background-aigis);
+}
+
+
+
+.intro h1 {
+	font-family: var(--font-Urbanist);
+	color: var(--color-heading-aigis);
+	display: inline;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	max-width: 58%;
+	margin: 0 auto;
+	font-size: 2em;
+}
+
+.intro > img:first-of-type {
+	display: block;
+	margin: 1em auto;
+	height: 2em;
+}
+
+.intro > p:nth-of-type(2) {
+	margin: 0 auto;
+	width: 85%;
+	text-align: center;
+}
+
+.intro p {
+	line-height: 2;
+	margin-bottom: .5em;
+	margin-top: .5em;
+}
+
+.intro article {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.intro h2 {
+	text-align: center;
+	font-size: 3em;
+}
+
+.intro article img {
+	text-align: center;
+	display: block;
+}
+
+
+.intro > p:first-of-type {
+	font-family: var(--font-Urbanist);
+	font-weight: 900;
+	color: var(--color-heading-aigis);
+	font-size: .8em;
+	display: inline;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	margin-top: 2em;
+}
+
+.intro a { 
+	text-decoration: none;
+	color: var(--color-text-alt);
+	border-radius: 55px;
+	background: linear-gradient(90deg, #FC3434 0%, #CE0202 100%);
+	font-size: 1.1em;
+	padding: .5em 1em .5em 2em;
+	font-family: var(--font-Urbanist);
+	font-weight: 600;
+	letter-spacing: 3px;
+	display: flex;
+	gap: 1em;
+	margin-bottom: .5em;
+	
+}
+
+
 
 @keyframes pathmove {
 0% {

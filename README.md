@@ -74,7 +74,7 @@ Later bij de screenreader test kwam ik erachter dat mijn website niet goed gebou
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
@@ -94,25 +94,24 @@ Later bij de screenreader test kwam ik erachter dat mijn website niet goed gebou
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  de html ging wel goed, de css was nog lastig
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Luka           | Rens               | Reuben       | student 4        |
+  | ---            | de nav bar         | ---          | ---              |
+  | weer inkomen   | zichtig maken      | weer inkomen | en dan ik dat    |
+  | in de regels   |                    | in flexbox   | dit wil ik zeker |
+  | van html       |                    | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - html structuur veranderen
+  - backdrop filter
+  - figure article ipv div
   - ...
 
 </details>
@@ -127,13 +126,13 @@ Later bij de screenreader test kwam ik erachter dat mijn website niet goed gebou
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  css gaat tot nu toe erg goed, moeite met selectoren en positioneren.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Luka           | Rens               | Reuben       |                  |
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
