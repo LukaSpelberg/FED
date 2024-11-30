@@ -398,7 +398,7 @@ main .flavorText h2 {
 }
 
 .seesCharacters article h3:after {
-	content: url('/images/arrow.svg');
+	content: url('../images/arrow.svg');
 	margin-top: .3em;
 }
 
@@ -967,6 +967,12 @@ header figure:before {
 	grid-column: 2 / 4;
 	grid-gap: .5em;
 }
+
+
+.expansionpassInhoud article ul li{
+	
+}
+
 
 .expansionpassInhoud article ul li::marker {
 	content: url("/images/musicNote.svg");
