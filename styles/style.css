@@ -918,6 +918,8 @@ header figure:before {
 
 .expansionpassInhoud {
 	background-color: var(--color-background-aigis-alt);
+	display: flex;
+	flex-direction: column;
 }
 
 
@@ -940,12 +942,57 @@ header figure:before {
 	line-height: 2;
 	width: 25em;
 	margin: auto;
+	margin-bottom: 5em;
 }
+
+.expansionpassInhoud > p:nth-of-type(2) {
+	border: solid 1px var(--color-heading-aigis-h2);
+	background-color: var(--color-heading-aigis-h2);
+	color: var(--color-background-aigis);
+	display: inline;
+	font-size: .8em;
+	font-family: var(--font-Urbanist);
+	font-weight: 500;
+	letter-spacing: .2em;
+	margin: 0 auto;
+	padding: 0 .5em 0 .5em;
+}
+
+.expansionpassInhoud > p:nth-of-type(3) {
+	font-family: var(--font-MinionPro);
+	font-size: 2em;
+	color: var(--color-heading-aigis-h2);
+	margin: 0 auto;
+	z-index: 1;
+}
+
+.expansionpassInhoud > p:nth-of-type(3)::before {
+	content: " ";
+	width: 2.7em;
+	height: 1px;
+	background-color: var(--color-heading-aigis-h2);
+	position: absolute;
+	margin-top: .6em;
+	left: 1em;
+}
+
+.expansionpassInhoud > p:nth-of-type(3)::after {
+	content: " ";
+	width: 2.7em;
+	height: 1px;
+	background-color: var(--color-heading-aigis-h2);
+	position: absolute;
+	margin-top: .6em;
+	right: 1em;
+}
+
+
 
 .expansionpassInhoud article {
 	display: grid;
 	grid-template-columns: repeat(3, auto);
 	grid-template-rows: repeat(2, auto);
+	margin-bottom: 2em;
 }
 
 .expansionpassInhoud  article h3 {
@@ -959,6 +1006,10 @@ header figure:before {
 	grid-row: 2;
 	grid-column: 1;
 	align-self: center;
+	font-family: var(--font-Urbanist);
+	font-weight: 900;
+	color: var(--color-heading-aigis-h2);
+	justify-self: center;
 }
 
 .expansionpassInhoud article ul {
@@ -969,15 +1020,24 @@ header figure:before {
 }
 
 
-.expansionpassInhoud article ul li{
-	
+.expansionpassInhoud article ul {
+	list-style-position: inside;
+}
+
+.expansionpassInhoud article ul li {
+	font-family: var(--font-Urbanist);
+	color: var(--color-heading-aigis-h2);
+	font-size: .6em;
+	font-weight: 500;
 }
 
 
 .expansionpassInhoud article ul li::marker {
-	content: url("/images/musicNote.svg");
+	content: "♪   ";
+	color: var(--color-heading-aigis-h2);
+	margin: 1em;
+	font-family: Arial, Helvetica, sans-serif;
 }
-
 
 @media (min-width:38em) {
 	
