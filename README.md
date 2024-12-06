@@ -64,6 +64,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 Later bij de screenreader test kwam ik erachter dat mijn website niet goed gebouwd is voor screenreaders. Hij Skipte veel text omdat ze bijvoorbeeld in een svg stonden. Als je de website ook opent krijg je eerst een pop up te zien, maar deze is niet zichtbaar voor de screenreader. Dus als je niet kan zien heb je geen idee hoe je hem kan verwijderen. 
 
+ <img src="readme-images/toegankelijksheidstest1.jpg" width="375px" alt="eerste pagina test">
+ <img src="readme-images/toegankelijksheidstest1_2.jpg" width="375px" alt="tweede pagina test">
+ <img src="readme-images/toegankelijksheidstest1_3.jpg" width="375px" alt="derde pagina test">
+ <img src="readme-images/toegankelijksheidstest1_4.jpg" width="375px" alt="vierde pagina test">
+ <img src="readme-images/toegankelijksheidstest1_5.jpg" width="375px" alt="vijfde pagina test">
+
 </details>
 
 
@@ -160,7 +166,11 @@ Later bij de screenreader test kwam ik erachter dat mijn website niet goed gebou
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-
+<img src="readme-images/toegankelijksheidstest2_1.jpg" width="375px" alt="eerste pagina test">
+ <img src="readme-images/toegankelijksheidstest2_2.jpg" width="375px" alt="tweede pagina test">
+ <img src="readme-images/toegankelijksheidstest2_3.jpg" width="375px" alt="derde pagina test">
+ <img src="readme-images/toegankelijksheidstest2_4.jpg" width="375px" alt="vierde pagina test">
+ <img src="readme-images/toegankelijksheidstest2_5.jpg" width="375px" alt="vijfde pagina test">
 </details>
 
 
