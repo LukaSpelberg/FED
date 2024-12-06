@@ -36,7 +36,6 @@ const observer = new IntersectionObserver((entries) => {
 
 articles.forEach((article) => observer.observe(article));
 
-/*hallo */
 
 
 function autoPlay() {

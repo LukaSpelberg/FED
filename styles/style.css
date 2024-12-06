@@ -366,7 +366,7 @@ main .flavorText h2 {
 }
 
 .seesCharacters {
-	background-color: rgba(91, 164, 215, 100);
+	
 	display: flex;
 	flex-direction: column;
 	align-items: center;
