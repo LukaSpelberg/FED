@@ -14,8 +14,8 @@ trailerIframe.addEventListener("click", autoPlay)
 
 const observerOptions = {
   root: null, 
-  rootMargin: "-40% 0px -60% 0px",
-  threshold: 0 
+  rootMargin: "-50% 0px -50% 0px",
+  threshold: 1
 }
 
 const scroll = new LocomotiveScroll({
@@ -23,17 +23,18 @@ const scroll = new LocomotiveScroll({
   smooth: true
 });
 
-const intersectionCallback = (entries) => {
+const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      section.style.backgroundColor = kleuren
-
+      const index = Array.from(articles).indexOf(entry.target) /* lijn 29-37 zijn met de hulp van chat gpt */
+      section.style.backgroundColor = kleuren[index % kleuren.length]
+      section.style.transition = "background-color 0.5s ease-in-out"
 
     }
   })
-}
+}) 
 
-observer.observe(articles)
+articles.forEach((article) => observer.observe(article));
 
 
 
