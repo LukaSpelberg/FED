@@ -244,8 +244,8 @@ Later bij de screenreader test kwam ik erachter dat mijn website niet goed gebou
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
+  1. https://chatgpt.com/share/675304de-e184-8004-ad14-51fd18d2ce9a 
+  2. https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#interfaces mdn over intersection
   3. ...
 
 </details>

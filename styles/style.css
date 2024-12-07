@@ -64,6 +64,8 @@
 /* JOUW STYLING */
 /****************/
 
+
+
 header {
 	position: relative;
 	height: 100vh;
@@ -102,18 +104,40 @@ nav button {
 	flex-direction: column;
 	font-family: var(--font-Urbanist);
 	color: var(--color-text-alt);
-	padding: 1.5em 0.8em 1.5em 1.5em;
+	padding: 1em 0em 1.5em 1.5em;
 	background-color: transparent;
 	position: fixed;
 	right: 0;
 	top: .05em;
 	z-index: 2;
-	
+	align-items: center;
+
 }
 
-nav button img {
-	margin-bottom: .5em;
+nav button svg {
+    width: 48px;
+    height: 39px;
+
 }
+
+nav button svg line {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+	transform-origin: center center; 
+}
+
+nav button.toonX svg line:nth-child(1) {
+    transform: translateY(-4px) rotate(-45deg); 
+}
+
+nav button.toonX svg line:nth-child(2) {
+    opacity: 0; 
+}
+
+nav button.toonX svg line:nth-child(3) {
+    transform: translateY(4px) rotate(45deg);
+
+}
+
 
 nav > img {
 	position: fixed;
@@ -123,9 +147,7 @@ nav > img {
 	height: 7em;
 }
 
-nav.toonMenu button img {
-	content: url('../images/kruis.svg');
-}
+
 
 
 nav ul { 
@@ -153,7 +175,7 @@ nav ul li:first-of-type {
 
 nav.toonMenu ul {
 	top: 0;
-	transform: translateX(0em) translateY(0%);
+	transform: translateX(0%) translateY(0%);
 	width: 100%;
 	height: 100%;
 	filter: blur(0px);
@@ -173,6 +195,14 @@ header section img {
 
 header section p {
 	display: flex;
+}
+
+header > img:last-of-type {
+	display: none;
+}
+
+main p {
+	opacity: 0;
 }
 
 main h2 {
@@ -238,29 +268,28 @@ main .buyNow h2 {
 @keyframes fadeInUp {
 	0% {
 		opacity: 0;
-		top: 100%;
-	}
-	50% {
-		opacity: 1;
-		top: 0;
+		transform: translateY(100%);
 	}
 	100% {
-		opacity: 0;
-		top: 100%;
+		opacity: 1;
+		transform: translateY(0);
 	}
 	
 }
+
+.animatie {
+	animation: fadeInUp 1s linear ;
+	opacity: 1;
+}
+
+
 
 main p {
 	font-family: var(--font-Urbanist);
 	font-weight: 500;
 	color: var(--color-text);
 	font-size: .6em;
-	animation: fadeInUp 1s linear ;
 }
-
-
-
 
 main section a { 
 	text-decoration: none;
@@ -275,6 +304,7 @@ main section a {
 	display: flex;
 	gap: 1em;
 	margin-bottom: .5em;
+	margin-top: .5em;
 }
 
 main .buyNow a svg {
@@ -366,7 +396,7 @@ main .flavorText h2 {
 }
 
 .seesCharacters {
-	
+	background-color: rgba(91, 164, 215, 100);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -676,6 +706,10 @@ footer .specs li {
 	width: 60%;
 }
 
+.expansionHeader nav {
+	display: none;
+}
+
 header p {
 	position: absolute;
 	bottom: 4em;
@@ -813,7 +847,9 @@ header figure:before {
 	
 }
 
-
+.intro article:first-of-type {
+	overflow: hidden;
+}
 
 .aigisCharacters {
 	background-color: var(--color-background-aigis)
@@ -1260,7 +1296,21 @@ header figure:before {
 }
 
 .rodeTrailer {
-	background-color: var(--color-background-aigis-alt) !important
+	background-color: var(--color-background-aigis-alt) 
+}
+
+dialog[open] { 
+	background-color: var(--color-background-aigis);
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	align-items: center;
+	margin: 0 auto;
+	margin-top: 15em;
+	padding-left: 1em;
+	padding-right: 1em;
+	border: solid 1px;
+	
 }
 
 @media (min-width:38em) {
@@ -1294,8 +1344,9 @@ header figure:before {
 	nav ul li:first-of-type {
 	margin-top: 0em;
 	}
+
   }
-  
+
   @media (prefers-color-scheme: dark) {
 	:root {
 	--color-text:#11202b;
@@ -1307,6 +1358,25 @@ header figure:before {
 	--color-background-section:#2b2d30; 
 	--color-background-section-2: #31363a;
 	--color-background-aigis-alt: #2c2828;
+	}
+  }
+
+  @media (prefers-reduced-motion) {
+
+	header > img:last-of-type {
+		display: initial;
+	}
+
+	header video {
+		display: none;
+	}
+
+	p { 
+		opacity: 1;
+	}
+
+	.animatie { 
+		animation: fadeInUp 0s linear ;
 	}
   }
   

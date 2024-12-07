@@ -15,6 +15,19 @@
 
 <body>
     <header class="expansionHeader">
+        <nav>
+			<img src="images/menu.png" alt="">
+			<button aria-hidden="true"><img src="images/lijn.svg" alt="">menu</button>
+			<ul>
+				<li>Features</li>
+				<li>Game System</li>
+				<li>Character</li>
+				<li>DLC</li>
+				<li><a href="expansion_pass.html">expansion Pass</a></li>
+				<li>News</li>
+				<li>En</li>
+			</ul>
+		</nav>
         <video autoplay muted>
             <source src="videos/aigisheadingvideo.mp4" type="video/mp4">
         </video>
@@ -109,7 +122,13 @@
                 <li>Kichimoji 199X</li>
                 <li>I believe</li>
                 <li>Blooming Villain</li>
-                <li>Beneath the Mask</li>
+                <li class="liedje">Beneath the Mask</li>
+                <dialog>
+                    <h3>Beneath the mask</h3>
+                    <p>Beneath the mask plays when you walk outside on Free days.</p>
+                    <audio controls src="audio/Persona 5 OST- Beneath the Mask.mp3"></audio>
+                    <button>sluiten</button>
+                </dialog>
                 <li>Gentle Madman</li>
                 <li>Keeper of Lust</li>
                 <li>Victory</li>
@@ -209,3 +228,6 @@
 		</section>
     </footer>
 </body>
+<script defer src="scripts/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+</html>
