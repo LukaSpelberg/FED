@@ -8,6 +8,7 @@ const muziekModal = document.querySelector("dialog")
 const sluitKnop = document.querySelector("dialog button")
 
 
+
 deButton.addEventListener("click", function() {
   deButton.classList.toggle("toonX");
   toggleMenu();
@@ -15,11 +16,10 @@ deButton.addEventListener("click", function() {
 
 function toggleMenu() {  
   let deNav = document.querySelector("nav")
-  let deHeader = document.querySelector("header section")
-  let deVideo = document.querySelector("header video")
 
   deNav.classList.toggle("toonMenu")
 }
+
 
 
 if (muziekModal && dialogOpen && sluitKnop) {
@@ -34,7 +34,7 @@ sluitKnop.addEventListener("click",() =>{
 
 trailerIframe.addEventListener("mouseenter", autoPlay)
 trailerIframe.addEventListener("mouseleave", autoPlayUit)
-trailerIframe.addEventListener("click", autoPlay)
+trailerIframe.addEventListener("touchstart", autoPlay)
 
 
 

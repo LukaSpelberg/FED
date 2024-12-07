@@ -58,8 +58,6 @@
 
 
 
-
-
 /****************/
 /* JOUW STYLING */
 /****************/
@@ -1312,6 +1310,69 @@ dialog[open] {
 	border: solid 1px;
 	
 }
+
+
+body:has([value="default"]:checked) {
+	--color-text:#1d384a;
+	--color-text-alt: #FAFFFF;
+	--color-heading-aigis:rgb(229, 0, 0);
+	--color-background:#eee;
+	--color-heading-aigis-h2: #3F1D1D;
+	--color-background-aigis: #FFE5E5;
+	--color-background-section:#dce9f5; 
+	--color-background-section-2: #C0D5E8;
+	--color-background-aigis-alt: #FFF0F0;
+	--color-sees-characters: rgba(91, 164, 215, 100)
+}
+
+body:has([value="Dark"]:checked) {
+		--color-text:#11202b;
+		--color-text-alt: #FAFFFF;
+		--color-heading-aigis:rgb(78, 0, 0);
+		--color-background:#c6c6c6;
+		--color-heading-aigis-h2: #3F1D1D;
+		--color-background-aigis: #6f5757;
+		--color-background-section:#2b2d30; 
+		--color-background-section-2: #31363a;
+		--color-background-aigis-alt: #2c2828;
+
+}
+
+body:has([value="geel"]:checked) {
+	--color-text:#11202b;
+	--color-text-alt: #FAFFFF;
+	--color-heading-aigis:rgb(78, 0, 0);
+	--color-background:#dad013;
+	--color-heading-aigis-h2: #3F1D1D;
+	--color-background-aigis: #cfe45b;
+	--color-background-section:#eef13a; 
+	--color-background-section-2: #f7e952;
+	--color-background-aigis-alt: #f2ec4a;
+}
+
+body:has([value="rood"]:checked) {
+	--color-text:#11202b;
+	--color-text-alt: #FAFFFF;
+	--color-heading-aigis:rgb(78, 0, 0);
+	--color-background:#d22525;
+	--color-heading-aigis-h2: #3F1D1D;
+	--color-background-aigis: #e4665b;
+	--color-background-section:#f1563a; 
+	--color-background-section-2: #c77251;
+	--color-background-aigis-alt: #c23c27;
+}
+
+fieldset {
+	border: 0px;
+	display: flex;
+	flex-direction: column;
+	padding-left: 2em;
+}
+
+fieldset p {
+	position: unset;
+}
+
 
 @media (min-width:38em) {
 	
