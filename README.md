@@ -246,6 +246,7 @@ Later bij de screenreader test kwam ik erachter dat mijn website niet goed gebou
 
   1. https://chatgpt.com/share/675304de-e184-8004-ad14-51fd18d2ce9a 
   2. https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API#interfaces mdn over intersection
-  3. ...
+  3. https://stackoverflow.com/questions/32339857/how-to-set-video-width-to-100-up-to-some-max-value-in-iframe-with-div
+  4.https://css-tricks.com/how-to-use-the-locomotive-scroll-for-all-kinds-of-scrolling-effects/
 
 </details>

@@ -33,7 +33,14 @@
 
 
 
-
+/* de 5 surface plane dingen zijn
+	* scroll animatie 
+	* animatie
+	* has 
+	* themes (gecombineerd met has)
+	* video muziek (dialog op pagina 2 met muziek list items)
+	* Reduced motion (haalt header video weg voor een statische afbeelding)
+*/
 
 /*********************/
 /* CUSTOM PROPERTIES */
@@ -49,7 +56,8 @@
 	--color-background-section:#dce9f5; 
 	--color-background-section-2: #C0D5E8;
 	--color-background-aigis-alt: #FFF0F0;
-	--color-sees-characters: rgba(91, 164, 215, 100)
+	--color-sees-characters: rgba(91, 164, 215, 100);
+	--color-strega-characters: rgba(147, 204, 150, 100);
 	--font-NotoSans: 'NotoSans', Sans-serif;
 	--font-Syncopate: 'Syncopate', Sans-serif;
 	--font-Urbanist: 'Urbanist', Sans-serif;
@@ -256,6 +264,7 @@ main .buyNow {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	background-color: var(--color-text-alt);
 }
 
 main .buyNow h2 {
@@ -289,7 +298,7 @@ main p {
 	font-size: .6em;
 }
 
-main section a { 
+main section a, div a{ 
 	text-decoration: none;
 	color: var(--color-text-alt);
 	border-radius: 55px;
@@ -304,6 +313,8 @@ main section a {
 	margin-bottom: .5em;
 	margin-top: .5em;
 }
+
+
 
 main .buyNow a svg {
 	margin-top: .1em;
@@ -394,7 +405,7 @@ main .flavorText h2 {
 }
 
 .seesCharacters {
-	background-color: rgba(91, 164, 215, 100);
+	background-color: var(--color-sees-characters);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -454,7 +465,7 @@ main .flavorText h2 {
 
 
 .stregaCharacters {
-	background-color: rgba(147, 204, 150, 100);
+	background-color: var(--color-strega-characters);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -704,9 +715,21 @@ footer .specs li {
 	width: 60%;
 }
 
+.expansionHeader > img:last-of-type {
+	display: initial;
+}
+
 .expansionHeader nav {
 	display: none;
 }
+
+.fieldset2 {
+	position: absolute;
+	top: 5em;
+	left: 0;
+	padding-left: .5em;
+}
+
 
 header p {
 	position: absolute;
@@ -1322,11 +1345,12 @@ body:has([value="default"]:checked) {
 	--color-background-section:#dce9f5; 
 	--color-background-section-2: #C0D5E8;
 	--color-background-aigis-alt: #FFF0F0;
-	--color-sees-characters: rgba(91, 164, 215, 100)
+	--color-sees-characters: rgba(91, 164, 215);
+	--color-strega-characters: rgba(147, 204, 150);
 }
 
 body:has([value="Dark"]:checked) {
-		--color-text:#11202b;
+		--color-text:#c5c5c5;
 		--color-text-alt: #FAFFFF;
 		--color-heading-aigis:rgb(78, 0, 0);
 		--color-background:#c6c6c6;
@@ -1335,7 +1359,8 @@ body:has([value="Dark"]:checked) {
 		--color-background-section:#2b2d30; 
 		--color-background-section-2: #31363a;
 		--color-background-aigis-alt: #2c2828;
-
+		--color-sees-characters: #222222;
+		--color-strega-characters: #555151;
 }
 
 body:has([value="geel"]:checked) {
@@ -1348,6 +1373,8 @@ body:has([value="geel"]:checked) {
 	--color-background-section:#eef13a; 
 	--color-background-section-2: #f7e952;
 	--color-background-aigis-alt: #f2ec4a;
+	--color-sees-characters: rgb(231, 238, 127);
+	--color-strega-characters: rgb(225, 213, 87);
 }
 
 body:has([value="rood"]:checked) {
@@ -1360,6 +1387,8 @@ body:has([value="rood"]:checked) {
 	--color-background-section:#f1563a; 
 	--color-background-section-2: #c77251;
 	--color-background-aigis-alt: #c23c27;
+	--color-sees-characters: rgb(196, 62, 62);
+	--color-strega-characters: rgb(183, 54, 54);
 }
 
 fieldset {
@@ -1372,6 +1401,7 @@ fieldset {
 fieldset p {
 	position: unset;
 }
+
 
 
 @media (min-width:38em) {

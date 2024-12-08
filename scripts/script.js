@@ -38,7 +38,7 @@ trailerIframe.addEventListener("touchstart", autoPlay)
 
 
 
-
+/*locomotivescroll voor de lol met een bron gedaan */
 
 const scroll = new LocomotiveScroll({
   el: document.querySelector('body'),
